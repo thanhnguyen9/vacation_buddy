@@ -39,3 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'faraday'
+gem 'dotenv-rails'
+gem 'pry'
+gem 'pry-nav'

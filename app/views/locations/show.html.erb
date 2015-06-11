@@ -1,0 +1,18 @@
+<%= render partial: "searchform" %> 
+<h3>7 Days</h3>
+
+  <% @forecast["daily"]["data"].each do |day| %>
+  <div class="row">
+    <div class="col-md-4">
+        <span>At <%= Time.at(day["time"]) %></span>
+    </div>
+  </div>
+    <ul>
+      <li>At <%= Time.at(day["time"]) %></li>
+      <li>Condition <%= day["summary"] %></li>
+      <li>Temperature Min <%= day["temperatureMin"] %></li>
+      <li>Temperature Max <%= day["temperatureMax"] %></li>
+      <li>Wind <%= day["windSpeed"] %></li>
+    </ul>
+    <br>
+  <%end%>
